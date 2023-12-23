@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container {
+    /* display: flex;
+    justify-content: center; */
+    width: 70vw;
+    margin:10vw auto;
+    /* background-color: aqua; */
+}
+
+.main-container .top-container{
+    /* background-color: rgb(121, 129, 129); */
+    display: flex;
+    justify-content: flex-start;
+}
+.top-container .info{
+    margin: auto;
+    /* margin-left: 4vw; */
+}
+.top-container .info p{
+    text-align: center;
+    font: 700 1.8rem;
+    color: orangered;
+}
+.form-container .sub-section label input[type="radio"]{
+    margin: 5px;
+}
+.top-container .info h2,h3{
+    color: orangered;
+    font-size: larger;
+    text-align: center;
+}
+.top-container .images img{
+    width: 10vw;
+    height: 10vw;
+}
+
+.top-container .images{
+   padding: 1vmax;
+    margin-left: 3vw;
+}
+.form-container .section-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid black;
+    /* margin: 0.25vmax; */
+}
+
+.section-1 .sub-section{
+    display: flex;
+    margin: 0.5vmax;
+    width: 30vw;
+    justify-self: start;
+}
+.section-1 .sub-section input{
+    /* padding: 0.5vmax; */
+    border: none;
+    margin-left: 10px;
+    border-bottom: dotted;
+    /* border-radius: 10px; */
+}
+.section-1 .sub-section p{
+    font-size: 1.2rem;
+}
+
+.main-container .table {
+    display: grid;
+    grid-template-columns:2fr repeat(3,1fr);
+    grid-template-rows: 3;
+}
+
+.form-container .table .items{
+    border: 1px solid black;
+    padding: 0.5vmax;
+    text-align: center;
+}
+
+.form-container .table .heading{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+}
+
+.form-container .grid-container{
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr  repeat(3,1fr)
+}
+.form-container .grid-container .rotating {
+    grid-row: span 3;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg); 
+    word-wrap: break-word;
+    padding: 1vmax;
+}
+
+.form-container .grid-container .items input{
+     padding: 0.5vmax;
+     border: none;
+     margin-left: 3px;
+     /* border-bottom: dotted; */
+     border-radius: 3px;
+     align-items: center;
+     margin-top: 6px;
+}
+
+.form-container .grid-container div{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.form-container .grid-container .full{
+    grid-column-start: 1 ;
+    grid-column-end: 6;
+    text-align: center;
+    padding: 0.5vmax;
+    font-weight: bolder;
+}
+
+.bg-oranage{
+background-color: orange;
+}
